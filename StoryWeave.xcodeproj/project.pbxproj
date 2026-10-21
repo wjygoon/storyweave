@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032D5C0FEF9BE7DEECAFE303 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AFBFC0C476CC5FEEAA00F4 /* Buttons.swift */; };
+		08B6F5DB0BB1365B4AEAFCCE /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55341438ABC19E7A8DEABAE5 /* SubscriptionView.swift */; };
+		0D85F3C0365857B0ECC500B2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5056086CE2AAA17F912F70 /* DataManager.swift */; };
+		0ECD05D0FBF692468EECD067 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB44A9917B80BE1F270A4A01 /* GeminiService.swift */; };
+		0F2CF1AF4B4F394DADFB9AA4 /* AIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366857C7480C01696D4D5CB /* AIServiceProtocol.swift */; };
+		11693EF28243FCB264272D41 /* TypewriterText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7098EEFA6005840393BAD8C /* TypewriterText.swift */; };
+		126B3ADE95B27EC7BDC5CC8D /* StoryCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A601483E9E3C53B098A21C9 /* StoryCreationViewModel.swift */; };
+		127F8C5E965CACBB9CB3041B /* StoryReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A20C2735434714C96B833 /* StoryReadingView.swift */; };
+		1A1E0EFF5A326CA61FBEEB2A /* WorldTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34430A7A8500B478128F424 /* WorldTemplate.swift */; };
+		1A91522C0ABB0F12F766E2B6 /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD4FEC0EF8915D076F590ED /* SwiftData.framework */; };
+		3498D368574FDDAAA246E623 /* ContentModerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB090F8913EDABEA251B68 /* ContentModerator.swift */; };
+		3C7D74350260318406E5E362 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BB08D503F2193B6FF5210E /* HomeViewModel.swift */; };
+		3D90C48839242686CB38ABE5 /* PaywallComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FEF7FDDCF7E4BFC9983876 /* PaywallComponents.swift */; };
+		3E0DEE3C7B2F4260D43042C2 /* DALLEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51F1A9073997F34F23E724 /* DALLEService.swift */; };
+		3E259C96F1086A45928E9377 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C376651049DB7D818767D18C /* UIKit.framework */; };
+		40B38016C91AEAB277C67BAC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D0F3698B5149E3BBB86281 /* StoreKit.framework */; };
+		47CDAC76B0C0ACBD2F962E14 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D295001E285DA5CB48AB9 /* Common.swift */; };
+		4842A20266F6024DF05454FA /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0521FCEA8689EBD77414CA97 /* StoreKitManager.swift */; };
+		49B6C14A25E7496C8D754D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587E57166B9E0265AF6C5E0F /* Foundation.framework */; };
+		6060C224B91DA9D278A8078D /* DemoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2B609149CD68632947150 /* DemoStoryView.swift */; };
+		6AEDB9B78E6A9A7EAE63A3C7 /* StoryReadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A71385F837327DDD98E8FC /* StoryReadingViewModel.swift */; };
+		6FF203DB2E89E4011745062C /* DeepSeekService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B3FFF02BCE5A8FAB1ACF8 /* DeepSeekService.swift */; };
+		73E33673F80CC551C3C73E71 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E91B53FD4F0CD305D4F07 /* Story.swift */; };
+		778B3B551E82CE824A676720 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844BA6996F6BFB5C802CD83 /* AppConfig.swift */; };
+		79DD1991DC40EA528E0C64FD /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5BF18DFD3247BF1B56C5D /* Typography.swift */; };
+		7D5B770ACA76A5EB4651469D /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F514338AE0EBE5256F0DF /* ShareCardView.swift */; };
+		7F77D3856ED2283658248710 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030318F979911D0BAA06343C /* CharacterListView.swift */; };
+		821C88417EB00B0DF7B6B38F /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857BD8D5BDE2546FC8EEC0CD /* BlockManager.swift */; };
+		893EF06AD0A10859613A3CA5 /* ArkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7211171EF0066F87EAC21 /* ArkService.swift */; };
+		8B3D132894458FAE90A02BC7 /* StoryCreationEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FA3A4A315BC2C48642D86 /* StoryCreationEntryView.swift */; };
+		A00FBC617C3CE88B1A8BD8ED /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D15CB753723E066D9B196 /* AIProvider.swift */; };
+		A5C59D88871DC55BABD4C6C5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4AA3F8BCA4C02B887F91A /* SettingsView.swift */; };
+		AF21092E966545E0F21533F7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4036B3B9F5B55C81F7D1D /* HomeView.swift */; };
+		B472C68A6B02CE22FAF7E944 /* ComplianceGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE38A1A84710A706F760A7 /* ComplianceGate.swift */; };
+		B8717592E855540B9157DF4B /* SeedreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E057CE460C4C39A370F89F87 /* SeedreamService.swift */; };
+		C022744D6168FC7D4FF721B9 /* SupabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D30D011B9B4462E811FA7C /* SupabaseClient.swift */; };
+		C5A948943361AB6256644A2D /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B4456458D3B92D9910F9A0 /* UserPreferences.swift */; };
+		C652AE304A3EF6F2733F2006 /* QuotaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB058E1CA5488234E25FF0 /* QuotaManager.swift */; };
+		C65F601CA73FA9F989241924 /* AIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2EA0EDB5984ACB452D46F /* AIServiceManager.swift */; };
+		CC29894C133344DD24AAC36F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17225B68FD954FB702F60ED /* Extensions.swift */; };
+		DB582D9C12BAEFF5B3CE7E87 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B93C3C45578EA7EFA8786 /* Character.swift */; };
+		DD4999FCE4CBB8A30421B8A0 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05AA886367CA509FECAD6C7 /* ColorPalette.swift */; };
+		E7AF4F7824DC598D4C5D68AD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144BBD00DC174D7DE502032 /* SwiftUI.framework */; };
+		E8A4CE123CF33FB32A61A5F0 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C05973B68B37A9C63B5A3C /* AuthenticationServices.framework */; };
+		F326816A19E6E194FF85A98B /* StoryWeaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058F33C91F7298C590284BF /* StoryWeaveApp.swift */; };
+		F7A0AA8CC0CE1F27CB7F0FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3059F8CEEA45D75535FDD61 /* Assets.xcassets */; };
+		F8152024615EDD8C8728ABB8 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8617034CD243ED4207081301 /* Combine.framework */; };
+		F8D4F487B0519C40483F0CD4 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB8C3568B90C2EF0AB8662 /* SubscriptionViewModel.swift */; };
+		FE337416FDEA83ABE53E79DA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18648A2FD9E9B2850A20DC /* AuthManager.swift */; };
+		A55C45BB0E0D4977B8120CB959DBE47F /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BC670C7B3F4CF2B963E427A28A4125 /* Secrets.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		030318F979911D0BAA06343C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		03D5A87F3ECF7D1379FDF44A /* StoryWeave.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StoryWeave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0521FCEA8689EBD77414CA97 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		1F2D295001E285DA5CB48AB9 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		26F2B609149CD68632947150 /* DemoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStoryView.swift; sourceTree = "<group>"; };
+		38BB08D503F2193B6FF5210E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3A601483E9E3C53B098A21C9 /* StoryCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCreationViewModel.swift; sourceTree = "<group>"; };
+		42FB090F8913EDABEA251B68 /* ContentModerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModerator.swift; sourceTree = "<group>"; };
+		44FEF7FDDCF7E4BFC9983876 /* PaywallComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallComponents.swift; sourceTree = "<group>"; };
+		47D0F3698B5149E3BBB86281 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4B18648A2FD9E9B2850A20DC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		4B5056086CE2AAA17F912F70 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		55341438ABC19E7A8DEABAE5 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		587E57166B9E0265AF6C5E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60AB8C3568B90C2EF0AB8662 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
+		60D5BF18DFD3247BF1B56C5D /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		66AFBFC0C476CC5FEEAA00F4 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		7C2FA3A4A315BC2C48642D86 /* StoryCreationEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCreationEntryView.swift; sourceTree = "<group>"; };
+		7F6F514338AE0EBE5256F0DF /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		84E2EA0EDB5984ACB452D46F /* AIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIServiceManager.swift; sourceTree = "<group>"; };
+		857BD8D5BDE2546FC8EEC0CD /* BlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
+		8617034CD243ED4207081301 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+		89B4456458D3B92D9910F9A0 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		9144BBD00DC174D7DE502032 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9844BA6996F6BFB5C802CD83 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A28E91B53FD4F0CD305D4F07 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		A3059F8CEEA45D75535FDD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A366857C7480C01696D4D5CB /* AIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIServiceProtocol.swift; sourceTree = "<group>"; };
+		A7AB058E1CA5488234E25FF0 /* QuotaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaManager.swift; sourceTree = "<group>"; };
+		AB6B3FFF02BCE5A8FAB1ACF8 /* DeepSeekService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekService.swift; sourceTree = "<group>"; };
+		AC4A20C2735434714C96B833 /* StoryReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryReadingView.swift; sourceTree = "<group>"; };
+		B34430A7A8500B478128F424 /* WorldTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTemplate.swift; sourceTree = "<group>"; };
+		B7098EEFA6005840393BAD8C /* TypewriterText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypewriterText.swift; sourceTree = "<group>"; };
+		B7A71385F837327DDD98E8FC /* StoryReadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryReadingViewModel.swift; sourceTree = "<group>"; };
+		BB44A9917B80BE1F270A4A01 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		BCD4FEC0EF8915D076F590ED /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
+		C05AA886367CA509FECAD6C7 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		C0B4AA3F8BCA4C02B887F91A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C1047F9C89C5D41FC5854F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C17225B68FD954FB702F60ED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C376651049DB7D818767D18C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8D30D011B9B4462E811FA7C /* SupabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClient.swift; sourceTree = "<group>"; };
+		CA6B93C3C45578EA7EFA8786 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		CF51F1A9073997F34F23E724 /* DALLEService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALLEService.swift; sourceTree = "<group>"; };
+		D0C05973B68B37A9C63B5A3C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		D41D15CB753723E066D9B196 /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProvider.swift; sourceTree = "<group>"; };
+		E057CE460C4C39A370F89F87 /* SeedreamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedreamService.swift; sourceTree = "<group>"; };
+		E5D4036B3B9F5B55C81F7D1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F058F33C91F7298C590284BF /* StoryWeaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryWeaveApp.swift; sourceTree = "<group>"; };
+		F1F7211171EF0066F87EAC21 /* ArkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkService.swift; sourceTree = "<group>"; };
+		F5CE38A1A84710A706F760A7 /* ComplianceGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceGate.swift; sourceTree = "<group>"; };
+		D4BC670C7B3F4CF2B963E427A28A4125 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryWeaveAI/Config/Secrets.plist"; sourceTree = "<project>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B63EA58DFAB841721C87E2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7AF4F7824DC598D4C5D68AD /* SwiftUI.framework in Frameworks */,
+				1A91522C0ABB0F12F766E2B6 /* SwiftData.framework in Frameworks */,
+				E8A4CE123CF33FB32A61A5F0 /* AuthenticationServices.framework in Frameworks */,
+				40B38016C91AEAB277C67BAC /* StoreKit.framework in Frameworks */,
+				3E259C96F1086A45928E9377 /* UIKit.framework in Frameworks */,
+				49B6C14A25E7496C8D754D5D /* Foundation.framework in Frameworks */,
+				F8152024615EDD8C8728ABB8 /* Combine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DDCAAE2CCC5BB69FB9D3E39 /* AIService */ = {
+			isa = PBXGroup;
+			children = (
+				337E4C70E5918151C8EA092F /* CN */,
+				D41D15CB753723E066D9B196 /* AIProvider.swift */,
+				84E2EA0EDB5984ACB452D46F /* AIServiceManager.swift */,
+				A366857C7480C01696D4D5CB /* AIServiceProtocol.swift */,
+				42FB090F8913EDABEA251B68 /* ContentModerator.swift */,
+				CF51F1A9073997F34F23E724 /* DALLEService.swift */,
+				BB44A9917B80BE1F270A4A01 /* GeminiService.swift */,
+			);
+			path = AIService;
+			sourceTree = "<group>";
+		};
+		0EA905E09E421A2A42C1336C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C05AA886367CA509FECAD6C7 /* ColorPalette.swift */,
+				60D5BF18DFD3247BF1B56C5D /* Typography.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		11ABF9550F4A7DAF724E4FE1 /* Supabase */ = {
+			isa = PBXGroup;
+			children = (
+				C8D30D011B9B4462E811FA7C /* SupabaseClient.swift */,
+			);
+			path = Supabase;
+			sourceTree = "<group>";
+		};
+		25437FAE29C5434C413623F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F058F33C91F7298C590284BF /* StoryWeaveApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		268CA00F3ADEBDBB549E39C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0C05973B68B37A9C63B5A3C /* AuthenticationServices.framework */,
+				8617034CD243ED4207081301 /* Combine.framework */,
+				587E57166B9E0265AF6C5E0F /* Foundation.framework */,
+				47D0F3698B5149E3BBB86281 /* StoreKit.framework */,
+				BCD4FEC0EF8915D076F590ED /* SwiftData.framework */,
+				9144BBD00DC174D7DE502032 /* SwiftUI.framework */,
+				C376651049DB7D818767D18C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		337E4C70E5918151C8EA092F /* CN */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7211171EF0066F87EAC21 /* ArkService.swift */,
+				AB6B3FFF02BCE5A8FAB1ACF8 /* DeepSeekService.swift */,
+				E057CE460C4C39A370F89F87 /* SeedreamService.swift */,
+			);
+			path = CN;
+			sourceTree = "<group>";
+		};
+		4A3036CD8DEF7B5033584E7C /* StoryReading */ = {
+			isa = PBXGroup;
+			children = (
+				AC4A20C2735434714C96B833 /* StoryReadingView.swift */,
+			);
+			path = StoryReading;
+			sourceTree = "<group>";
+		};
+		52720A73413035B9108B0F42 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				7F6F514338AE0EBE5256F0DF /* ShareCardView.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		5C17F42CE4306BA317922304 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0DDCAAE2CCC5BB69FB9D3E39 /* AIService */,
+				F40F94DDAD6BFD316C732B8B /* Auth */,
+				B301DFF439F9B2F88AC43753 /* Payment */,
+				11ABF9550F4A7DAF724E4FE1 /* Supabase */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		754408076B97FDE1071892DF /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				55341438ABC19E7A8DEABAE5 /* SubscriptionView.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		7B497885BF8DC5B0BF811229 /* StoryWeaveAI */ = {
+			isa = PBXGroup;
+			children = (
+				25437FAE29C5434C413623F3 /* App */,
+				B97CAB1B8B378CC70CD776D4 /* Components */,
+				979466EF32D74090414319A0 /* Config */,
+				C79F4B336B11EB4EB68FE1F4 /* Data */,
+				C76649F2994B50E55F7E7DBB /* Models */,
+				A3BAEB6632B61AECA1E01327 /* Resources */,
+				5C17F42CE4306BA317922304 /* Services */,
+				0EA905E09E421A2A42C1336C /* Theme */,
+				F4D2483F973826F661582A61 /* Utilities */,
+				F7E15BAFE83960ABDE7D34CE /* ViewModels */,
+				BB1C04AD59DC0D9FC5BD5E67 /* Views */,
+			);
+			path = StoryWeaveAI;
+			sourceTree = "<group>";
+		};
+		8C41E19DE0EAC7EDB32CC6DE = {
+			isa = PBXGroup;
+			children = (
+				7B497885BF8DC5B0BF811229 /* StoryWeaveAI */,
+				268CA00F3ADEBDBB549E39C0 /* Frameworks */,
+				A34E26508119E1BA3F446903 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		979466EF32D74090414319A0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C1047F9C89C5D41FC5854F2B /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A34E26508119E1BA3F446903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D5A87F3ECF7D1379FDF44A /* StoryWeave.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3BAEB6632B61AECA1E01327 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3059F8CEEA45D75535FDD61 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA0D02E5E48D9C7A8F400AA9 /* DemoStory */ = {
+			isa = PBXGroup;
+			children = (
+				26F2B609149CD68632947150 /* DemoStoryView.swift */,
+			);
+			path = DemoStory;
+			sourceTree = "<group>";
+		};
+		B301DFF439F9B2F88AC43753 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				857BD8D5BDE2546FC8EEC0CD /* BlockManager.swift */,
+				A7AB058E1CA5488234E25FF0 /* QuotaManager.swift */,
+				0521FCEA8689EBD77414CA97 /* StoreKitManager.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		B97CAB1B8B378CC70CD776D4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				66AFBFC0C476CC5FEEAA00F4 /* Buttons.swift */,
+				1F2D295001E285DA5CB48AB9 /* Common.swift */,
+				F5CE38A1A84710A706F760A7 /* ComplianceGate.swift */,
+				44FEF7FDDCF7E4BFC9983876 /* PaywallComponents.swift */,
+				B7098EEFA6005840393BAD8C /* TypewriterText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BB1A19D59A4E92F09BDD18F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4036B3B9F5B55C81F7D1D /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB1C04AD59DC0D9FC5BD5E67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EED7CB1DBB776BC33A1E285C /* Character */,
+				AA0D02E5E48D9C7A8F400AA9 /* DemoStory */,
+				BB1A19D59A4E92F09BDD18F1 /* Home */,
+				D620CF9B53F8CE51D459E222 /* Settings */,
+				52720A73413035B9108B0F42 /* Share */,
+				DDA2A52334BB47D286B5ACCA /* StoryCreation */,
+				4A3036CD8DEF7B5033584E7C /* StoryReading */,
+				754408076B97FDE1071892DF /* Subscription */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C76649F2994B50E55F7E7DBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA6B93C3C45578EA7EFA8786 /* Character.swift */,
+				A28E91B53FD4F0CD305D4F07 /* Story.swift */,
+				B34430A7A8500B478128F424 /* WorldTemplate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C79F4B336B11EB4EB68FE1F4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B5056086CE2AAA17F912F70 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D620CF9B53F8CE51D459E222 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C0B4AA3F8BCA4C02B887F91A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DDA2A52334BB47D286B5ACCA /* StoryCreation */ = {
+			isa = PBXGroup;
+			children = (
+				7C2FA3A4A315BC2C48642D86 /* StoryCreationEntryView.swift */,
+			);
+			path = StoryCreation;
+			sourceTree = "<group>";
+		};
+		EED7CB1DBB776BC33A1E285C /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				030318F979911D0BAA06343C /* CharacterListView.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		F40F94DDAD6BFD316C732B8B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4B18648A2FD9E9B2850A20DC /* AuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F4D2483F973826F661582A61 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9844BA6996F6BFB5C802CD83 /* AppConfig.swift */,
+				C17225B68FD954FB702F60ED /* Extensions.swift */,
+				89B4456458D3B92D9910F9A0 /* UserPreferences.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F7E15BAFE83960ABDE7D34CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38BB08D503F2193B6FF5210E /* HomeViewModel.swift */,
+				3A601483E9E3C53B098A21C9 /* StoryCreationViewModel.swift */,
+				B7A71385F837327DDD98E8FC /* StoryReadingViewModel.swift */,
+				60AB8C3568B90C2EF0AB8662 /* SubscriptionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437EEE8492034DBB3072CBD5 /* StoryWeave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9E0D8FAF1860336A819EF01 /* Build configuration list for PBXNativeTarget "StoryWeave" */;
+			buildPhases = (
+				162AF3D62B4AC52550B8A260 /* Sources */,
+				8C756CFF84AF5820403D0709 /* Resources */,
+				B63EA58DFAB841721C87E2E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoryWeave;
+			packageProductDependencies = (
+			);
+			productName = StoryWeave;
+			productReference = 03D5A87F3ECF7D1379FDF44A /* StoryWeave.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFF97FF23ED5BD5CAE2ACCC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					437EEE8492034DBB3072CBD5 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9FBE08AE92AECA1FA0F02EFA /* Build configuration list for PBXProject "StoryWeave" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8C41E19DE0EAC7EDB32CC6DE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A34E26508119E1BA3F446903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				437EEE8492034DBB3072CBD5 /* StoryWeave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C756CFF84AF5820403D0709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A0AA8CC0CE1F27CB7F0FC9 /* Assets.xcassets in Resources */,
+				A55C45BB0E0D4977B8120CB959DBE47F /* Secrets.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162AF3D62B4AC52550B8A260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00FBC617C3CE88B1A8BD8ED /* AIProvider.swift in Sources */,
+				C65F601CA73FA9F989241924 /* AIServiceManager.swift in Sources */,
+				0F2CF1AF4B4F394DADFB9AA4 /* AIServiceProtocol.swift in Sources */,
+				778B3B551E82CE824A676720 /* AppConfig.swift in Sources */,
+				893EF06AD0A10859613A3CA5 /* ArkService.swift in Sources */,
+				FE337416FDEA83ABE53E79DA /* AuthManager.swift in Sources */,
+				821C88417EB00B0DF7B6B38F /* BlockManager.swift in Sources */,
+				032D5C0FEF9BE7DEECAFE303 /* Buttons.swift in Sources */,
+				DB582D9C12BAEFF5B3CE7E87 /* Character.swift in Sources */,
+				7F77D3856ED2283658248710 /* CharacterListView.swift in Sources */,
+				DD4999FCE4CBB8A30421B8A0 /* ColorPalette.swift in Sources */,
+				47CDAC76B0C0ACBD2F962E14 /* Common.swift in Sources */,
+				B472C68A6B02CE22FAF7E944 /* ComplianceGate.swift in Sources */,
+				3498D368574FDDAAA246E623 /* ContentModerator.swift in Sources */,
+				3E0DEE3C7B2F4260D43042C2 /* DALLEService.swift in Sources */,
+				0D85F3C0365857B0ECC500B2 /* DataManager.swift in Sources */,
+				6FF203DB2E89E4011745062C /* DeepSeekService.swift in Sources */,
+				6060C224B91DA9D278A8078D /* DemoStoryView.swift in Sources */,
+				CC29894C133344DD24AAC36F /* Extensions.swift in Sources */,
+				0ECD05D0FBF692468EECD067 /* GeminiService.swift in Sources */,
+				AF21092E966545E0F21533F7 /* HomeView.swift in Sources */,
+				3C7D74350260318406E5E362 /* HomeViewModel.swift in Sources */,
+				3D90C48839242686CB38ABE5 /* PaywallComponents.swift in Sources */,
+				C652AE304A3EF6F2733F2006 /* QuotaManager.swift in Sources */,
+				B8717592E855540B9157DF4B /* SeedreamService.swift in Sources */,
+				A5C59D88871DC55BABD4C6C5 /* SettingsView.swift in Sources */,
+				7D5B770ACA76A5EB4651469D /* ShareCardView.swift in Sources */,
+				4842A20266F6024DF05454FA /* StoreKitManager.swift in Sources */,
+				73E33673F80CC551C3C73E71 /* Story.swift in Sources */,
+				8B3D132894458FAE90A02BC7 /* StoryCreationEntryView.swift in Sources */,
+				126B3ADE95B27EC7BDC5CC8D /* StoryCreationViewModel.swift in Sources */,
+				127F8C5E965CACBB9CB3041B /* StoryReadingView.swift in Sources */,
+				6AEDB9B78E6A9A7EAE63A3C7 /* StoryReadingViewModel.swift in Sources */,
+				F326816A19E6E194FF85A98B /* StoryWeaveApp.swift in Sources */,
+				08B6F5DB0BB1365B4AEAFCCE /* SubscriptionView.swift in Sources */,
+				F8D4F487B0519C40483F0CD4 /* SubscriptionViewModel.swift in Sources */,
+				C022744D6168FC7D4FF721B9 /* SupabaseClient.swift in Sources */,
+				11693EF28243FCB264272D41 /* TypewriterText.swift in Sources */,
+				79DD1991DC40EA528E0C64FD /* Typography.swift in Sources */,
+				C5A948943361AB6256644A2D /* UserPreferences.swift in Sources */,
+				1A1E0EFF5A326CA61FBEEB2A /* WorldTemplate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15100EA45B72528EE580A9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StoryWeaveAI/Config/StoryWeave.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = StoryWeaveAI/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barry.storyweave.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A9103213706556EB21A1283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = StoryWeaveAI/Config/StoryWeave.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7H5P7CXTZZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barry.storyweave.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8D90F71E556A69FA6788FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = StoryWeaveAI/Config/StoryWeave.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7H5P7CXTZZ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barry.storyweave.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D38134D9F40BE8F03FFA3C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StoryWeaveAI/Config/StoryWeave.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "";
+				INFOPLIST_FILE = StoryWeaveAI/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barry.storyweave.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FBE08AE92AECA1FA0F02EFA /* Build configuration list for PBXProject "StoryWeave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D90F71E556A69FA6788FB6 /* Debug */,
+				4A9103213706556EB21A1283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9E0D8FAF1860336A819EF01 /* Build configuration list for PBXNativeTarget "StoryWeave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38134D9F40BE8F03FFA3C57 /* Debug */,
+				15100EA45B72528EE580A9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFF97FF23ED5BD5CAE2ACCC6 /* Project object */;
+}
